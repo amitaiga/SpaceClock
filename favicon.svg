@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#5ef2ff"/>
+      <stop offset="50%" stop-color="#b06bff"/>
+      <stop offset="100%" stop-color="#ff5ec8"/>
+    </linearGradient>
+    <radialGradient id="bg" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#1a1240"/>
+      <stop offset="100%" stop-color="#02010a"/>
+    </radialGradient>
+  </defs>
+  <circle cx="32" cy="32" r="31" fill="url(#bg)"/>
+  <circle cx="32" cy="32" r="25" fill="none" stroke="rgba(94,242,255,.18)" stroke-width="5"/>
+  <!-- sweeping arc, three-quarters around like the dial -->
+  <circle cx="32" cy="32" r="25" fill="none" stroke="url(#g)" stroke-width="5"
+          stroke-linecap="round" stroke-dasharray="117.8 157.1" transform="rotate(-90 32 32)"/>
+  <!-- comet head at the end of the arc -->
+  <circle cx="7" cy="32" r="4.5" fill="#fff"/>
+  <!-- hands -->
+  <path d="M32 32 V17 M32 32 L42 38" stroke="#e8f4ff" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+  <circle cx="32" cy="32" r="3.5" fill="#ff5ec8"/>
+</svg>
